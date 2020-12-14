@@ -1,0 +1,24 @@
+body {
+    background-color: gold;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    font-variant: small-caps;
+}
+
+#title {
+    font-style: italic;
+}
+
+.centered {
+    text-align: center;
+}

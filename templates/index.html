@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Favorite Games</title>
+    <link href="static/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Post your favorite video game!</h1>
+
+    <form action="/add" method="POST">
+        <input name="name" type="text" placeholder="Enter your name..." autocomplete="off" autofocus />
+        <input name="game" type="text" placeholder="Enter your favorite game..." autocomplete="off" />
+        <input type="submit" />
+    </form>
+
+    {% if favorite_games|length != 0 %}
+    <table width="500px">
+        <tr>
+            <th>Name</th>
+            <th>Game</th>
+        </tr>
+        {% for entry in favorite_games %}
+        <tr>
+            <td>{{ entry['name'] }}</td>
+            <td>{{ entry['game'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</body>
+
+</html>
