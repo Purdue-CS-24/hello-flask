@@ -12,9 +12,14 @@ cd flask-demo/
 python3 -m venv venv
 ```
 
-Activate the virtual environment.
+Activate the virtual environment. For macOS/Linux:
 ```
-source venv/bin/activate
+. venv/bin/activate
+```
+
+For Windows:
+```
+. venv\Scripts\activate
 ```
 
 Install Flask and its dependencies.
